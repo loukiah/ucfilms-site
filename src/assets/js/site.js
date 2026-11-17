@@ -296,4 +296,17 @@
     }
     render(false);
   }
+
+  // Phone menu
+  (function () {
+    var btn = document.querySelector("[data-menu]");
+    if (!btn) return;
+    function set(open) {
+      document.body.classList.toggle("menu-open", open);
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    }
+    btn.addEventListener("click", function () { set(!document.body.classList.contains("menu-open")); });
+    document.querySelectorAll("#site-nav a").forEach(function (a) { a.addEventListener("click", function () { set(false); }); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") set(false); });
+  })();
 })();

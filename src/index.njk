@@ -69,7 +69,7 @@ eleventyComputed:
 <section class="brands wrap" aria-label="{{ 'Brands we have worked with' if lang == 'en' else 'Marken, mit denen wir gearbeitet haben' }}">
   <ul class="brand-list" role="list">
     {%- for b in site.brands %}
-    <li>{% if b.logo %}<img src="{{ b.logo }}" alt="{{ b.name }}" loading="lazy">{% else %}<span>{{ b.name }}</span>{% endif %}</li>
+    <li>{% if b.logo %}<img{% if b.tall %} class="tall"{% endif %} src="{{ b.logo }}" alt="{{ b.name }}" loading="lazy">{% else %}<span>{{ b.name }}</span>{% endif %}</li>
     {%- endfor %}
   </ul>
 </section>

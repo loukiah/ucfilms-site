@@ -8,17 +8,71 @@
   "seo_description_de": "undercurrent films ist ein Creative Production Studio in Berlin. Wir machen Filme, Content und Kampagnen für Marken, von der ersten Idee bis zum finalen Schnitt.",
   "tagline_lead_en": "Brand stories, made with",
   "tagline_lead_de": "Markengeschichten, gemacht mit",
-  "tagline_words_en": ["care.", "good people.", "a lighter footprint.", "curiosity."],
-  "tagline_words_de": ["Sorgfalt.", "guten Menschen.", "kleinem Fußabdruck.", "Neugier."],
+  "tagline_words_en": [
+    "care.",
+    "good people.",
+    "a lighter footprint.",
+    "curiosity."
+  ],
+  "tagline_words_de": [
+    "Sorgfalt.",
+    "guten Menschen.",
+    "kleinem Fußabdruck.",
+    "Neugier."
+  ],
   "intro_en": "A creative production studio in Berlin. We unite idea and production, bring in *talent we believe in*, and make work that feels human.",
   "intro_de": "Ein Creative Production Studio aus Berlin. Wir verbinden Idee und Produktion, holen *Talente, an die wir glauben*, und machen Arbeiten, die sich menschlich anfühlen.",
   "about_lead_en": "undercurrent is",
   "about_lead_de": "undercurrent ist",
-  "about_flips_en": ["small on purpose.", "bigger when it’s needed.", "easy to talk to.", "serious about craft.", "kind on set."],
-  "about_flips_de": ["klein aus Überzeugung.", "größer, wenn es sein muss.", "leicht ansprechbar.", "genau beim Handwerk.", "freundlich am Set."],
+  "about_flips_en": [
+    "small on purpose.",
+    "bigger when it’s needed.",
+    "easy to talk to.",
+    "serious about craft.",
+    "kind on set."
+  ],
+  "about_flips_de": [
+    "klein aus Überzeugung.",
+    "größer, wenn es sein muss.",
+    "leicht ansprechbar.",
+    "genau beim Handwerk.",
+    "freundlich am Set."
+  ],
   "about_text_en": "<p>undercurrent is a film production studio in Berlin. We make films, content and campaigns for brands, and we care about how the work gets made as much as how it looks.</p><p>We like to get to know a brand before we suggest anything. Then we build the idea, the team and the shoot around what we’ve learned. Sometimes that turns into a single film, like a fashion piece shot in the dunes of the Alentejo. Sometimes it becomes a long collaboration, like the films and monthly content we make for Space Time Architects from their journeys through Egypt, Saudi Arabia and Oman.</p><p>We scale to the job. Some ideas need a lean, hand-picked crew that can move fast. Others need a full production with every department on set. We build each team from people we trust, with newcomers working alongside experienced hands. Either way you talk to us directly, from the first call to the final cut.</p><p>We plan each production to waste as little as we can, and a growing part of our work is for international brands speaking to people in Europe.</p>",
   "about_text_de": "<p>undercurrent ist ein Filmproduktionsstudio in Berlin. Wir machen Filme, Content und Kampagnen für Marken, und uns ist wichtig, wie eine Arbeit entsteht, genauso wie, wie sie aussieht.</p><p>Wir lernen eine Marke gern kennen, bevor wir etwas vorschlagen. Dann bauen wir Idee, Team und Dreh um das, was wir gelernt haben. Manchmal wird daraus ein einzelner Film, wie ein Fashion-Film in den Dünen des Alentejo. Manchmal eine lange Zusammenarbeit, wie die Filme und der monatliche Content, den wir für Space Time Architects von ihren Reisen durch Ägypten, Saudi-Arabien und Oman machen.</p><p>Wir richten uns nach dem Projekt. Manche Ideen brauchen ein kleines, handverlesenes Team, das schnell ist. Andere brauchen eine volle Produktion mit allen Departments am Set. Jedes Team stellen wir aus Leuten zusammen, denen wir vertrauen, Nachwuchs arbeitet neben erfahrenen Profis. So oder so sprecht ihr direkt mit uns, vom ersten Gespräch bis zum finalen Schnitt.</p><p>Wir planen jede Produktion so, dass möglichst wenig verschwendet wird, und ein wachsender Teil unserer Arbeit ist für internationale Marken, die Menschen in Europa erreichen wollen.</p>",
   "team_photo": "",
-  "brands": [],
+  "brands": [
+    {
+      "name": "Roborock",
+      "logo": "/media/logos/roborock.svg"
+    },
+    {
+      "name": "Segway",
+      "logo": "/media/logos/segway.png"
+    },
+    {
+      "name": "AWOL Valerion",
+      "logo": "/media/logos/valerion.svg"
+    },
+    {
+      "name": "HOKA",
+      "logo": "/media/logos/hoka.svg"
+    },
+    {
+      "name": "Radisson Collection",
+      "logo": "/media/logos/radisson.png",
+      "tall": true
+    },
+    {
+      "name": "KangaROOS",
+      "logo": "/media/logos/kangaroos.png",
+      "tall": true
+    },
+    {
+      "name": "Mimosa",
+      "logo": "/media/logos/mimosa.svg",
+      "tall": true
+    }
+  ],
   "bts": []
 }

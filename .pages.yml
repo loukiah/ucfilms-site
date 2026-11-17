@@ -187,6 +187,9 @@ content:
           - name: logo
             label: Logo
             type: image
+          - name: tall
+            label: Stacked logo (show a bit bigger)
+            type: boolean
       - name: bts
         label: Behind-the-scenes photos (About page)
         type: image
