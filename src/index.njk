@@ -53,7 +53,7 @@ eleventyComputed:
       </a>
     </li>
     {%- endfor %}
-    {%- if featured.length % 2 == 1 %}
+    {%- if featured.length % 3 == 2 %}
     <li class="next-item"><a class="tile tile-next" href="#contact"><span class="tile-client">{{ "Your project," if lang == "en" else "Euer Projekt," }} <em class="accent">{{ "next." if lang == "en" else "als Nächstes." }}</em></span></a></li>
     {%- endif %}
   </ul>
