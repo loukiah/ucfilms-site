@@ -51,12 +51,21 @@
       "logo": "/media/logos/segway.png"
     },
     {
-      "name": "AWOL Valerion",
-      "logo": "/media/logos/valerion.svg"
+      "name": "AWOL",
+      "logo": "/media/logos/awol.png"
     },
     {
       "name": "Fujifilm",
       "logo": "/media/logos/fujifilm.svg"
+    },
+    {
+      "name": "Volkswagen",
+      "logo": "/media/logos/vw.svg",
+      "tall": true
+    },
+    {
+      "name": "Wolt",
+      "logo": "/media/logos/wolt.svg"
     },
     {
       "name": "HOKA",
@@ -64,17 +73,11 @@
     },
     {
       "name": "Radisson Collection",
-      "logo": "/media/logos/radisson.png",
-      "tall": true
+      "logo": "/media/logos/radisson.png"
     },
     {
       "name": "KangaROOS",
       "logo": "/media/logos/kangaroos.png",
-      "tall": true
-    },
-    {
-      "name": "Volkswagen",
-      "logo": "/media/logos/vw.svg",
       "tall": true
     }
   ],
