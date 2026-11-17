@@ -100,6 +100,17 @@
     var words;
     try { words = JSON.parse(el.getAttribute("data-rotate")); } catch (e) { return; }
     if (!words || words.length < 2 || reduceMotion) return;
+    // Reserve room for the longest word so nothing below jumps when it changes.
+    function reserve() {
+      var current = el.textContent, max = 0;
+      el.style.minHeight = "";
+      words.forEach(function (w) { el.textContent = w; max = Math.max(max, el.getBoundingClientRect().height); });
+      el.textContent = current;
+      el.style.minHeight = Math.ceil(max) + "px";
+    }
+    reserve();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(reserve);
+    var rt; window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(reserve, 150); });
     var i = 0, every = parseInt(el.getAttribute("data-interval"), 10) || 2800;
     setInterval(function () {
       el.classList.add("is-out");

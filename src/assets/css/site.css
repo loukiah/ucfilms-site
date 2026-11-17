@@ -418,3 +418,10 @@ button.person-card { cursor: pointer; }
 /* KangaROOS: keep the kangaroo, but line the wordmark up with the others */
 .brand-list img.lift { max-height: 44px; position: relative; top: -11px; }
 @media (max-width: 640px) { .brand-list img.lift { max-height: 36px; top: -9px; } }
+
+/* Rotating words: on phones the word gets its own line, and its height is reserved (see site.js), so nothing shifts */
+@media (max-width: 760px) {
+  .tagline { min-height: 0; }
+  .tagline .rotate { display: block; }
+}
+.about-title .rotate { display: block; }
