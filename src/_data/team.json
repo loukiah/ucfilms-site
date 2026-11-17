@@ -3,7 +3,7 @@
     "name": "Loukia Hadjiyianni",
     "role_en": "Creative Director",
     "role_de": "Creative Director",
-    "photo": "",
+    "photo": "/media/team-loukia.jpg",
     "bio_en": "",
     "bio_de": ""
   },
@@ -11,7 +11,7 @@
     "name": "Omid Mohadjeri",
     "role_en": "Creative Producer",
     "role_de": "Creative Producer",
-    "photo": "",
+    "photo": "/media/team-omid.jpg",
     "bio_en": "",
     "bio_de": ""
   },
@@ -19,7 +19,7 @@
     "name": "Hattie Yu",
     "role_en": "Executive Producer",
     "role_de": "Executive Producer",
-    "photo": "",
+    "photo": "/media/team-hattie.jpg",
     "bio_en": "",
     "bio_de": ""
   }
