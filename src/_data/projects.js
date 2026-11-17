@@ -3,6 +3,8 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 
+const hasLoop = (p) => Boolean(p.loop || p.loop_link);
+
 const DIR = path.resolve("content/projects");
 
 export default function () {
@@ -27,8 +29,9 @@ export default function () {
   }
   return {
     all: list,
-    featured: list.filter((p) => p.home),
-    extra: list.filter((p) => !p.home),
+    // Only projects with a moving thumbnail get a tile: no static tiles.
+    featured: list.filter((p) => p.home && hasLoop(p)),
+    extra: list.filter((p) => !p.home && hasLoop(p)),
     pages,
   };
 }

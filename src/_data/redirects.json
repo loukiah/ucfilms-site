@@ -1,10 +1,58 @@
 [
-  { "from": "/projects/", "to": "/#work" },
-  { "from": "/privacy-policy/", "to": "/privacy/" },
-  { "from": "/projects/space-time-architects-brand-film/", "to": "/work/space-time-architects/" },
-  { "from": "/projects/mimosa-collection/", "to": "/work/mimosa-sylt/" },
-  { "from": "/projects/eynvas-out-of-time/", "to": "/work/eyn-vas-out-of-time/" },
-  { "from": "/projects/kangaroos/", "to": "/work/kangaroos-what-moves-you/" },
-  { "from": "/work/", "to": "/#work" },
-  { "from": "/de/arbeiten/", "to": "/de/#work" }
+  {
+    "from": "/projects/",
+    "to": "/#work"
+  },
+  {
+    "from": "/privacy-policy/",
+    "to": "/privacy/"
+  },
+  {
+    "from": "/projects/space-time-architects-brand-film/",
+    "to": "/work/space-time-architects/"
+  },
+  {
+    "from": "/projects/mimosa-collection/",
+    "to": "/work/mimosa-sylt/"
+  },
+  {
+    "from": "/projects/eynvas-out-of-time/",
+    "to": "/work/eyn-vas-out-of-time/"
+  },
+  {
+    "from": "/projects/kangaroos/",
+    "to": "/work/kangaroos-what-moves-you/"
+  },
+  {
+    "from": "/work/",
+    "to": "/#work"
+  },
+  {
+    "from": "/de/arbeiten/",
+    "to": "/de/#work"
+  },
+  {
+    "from": "/projects/valerion-directors-journey/",
+    "to": "/work/valerion-a-directors-journey/"
+  },
+  {
+    "from": "/projects-2/valerion-ein-treuer-begleiter/",
+    "to": "/de/arbeiten/valerion-a-directors-journey/"
+  },
+  {
+    "from": "/projects/siz-fashion/",
+    "to": "/work/siz-fashion/"
+  },
+  {
+    "from": "/projects-2/siz-fashion/",
+    "to": "/de/arbeiten/siz-fashion/"
+  },
+  {
+    "from": "/projects/hoka-bondi-9/",
+    "to": "/work/hoka-bondi-9/"
+  },
+  {
+    "from": "/projects-2/hoka-bondi-9/",
+    "to": "/de/arbeiten/hoka-bondi-9/"
+  }
 ]

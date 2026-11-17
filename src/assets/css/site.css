@@ -265,3 +265,10 @@ button.person-card { cursor: pointer; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* Legal texts copied from the old site */
+.legal h3 { font-family: var(--sans); font-size: 20px; font-weight: 600; line-height: 1.3; margin: 32px 0 8px; color: var(--paper); }
+.legal h2 + h3 { margin-top: 12px; }
+.legal ul { margin: 0 0 28px; padding-left: 1.2em; }
+.legal a { overflow-wrap: anywhere; }
+.legal .caps, .legal p:has(> b:only-child) { font-size: 16px; letter-spacing: .02em; }

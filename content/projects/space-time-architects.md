@@ -3,7 +3,7 @@ client: Space Time Architects
 title: Brand film and monthly content
 title_de: Markenfilm und monatlicher Content
 slug: space-time-architects
-order: 3
+order: 6
 home: true
 published: true
 category_en: Brand film, documentary and social content

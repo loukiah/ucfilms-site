@@ -2,7 +2,7 @@
 client: Mimosa Collection
 title: Sylt
 slug: mimosa-sylt
-order: 1
+order: 3
 home: true
 published: true
 category_en: Hotel image film

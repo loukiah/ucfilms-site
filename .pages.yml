@@ -76,7 +76,7 @@ content:
       - name: loop
         label: Moving thumbnail (upload a clip)
         type: file
-        description: A silent clip of 6–12 seconds, MP4, under about 20 MB. Used for the home page square and the top of the project page.
+        description: A silent clip of 6–12 seconds, MP4, under about 20 MB. Used for the home page square and the top of the project page. Projects without a moving thumbnail are not shown on the home page.
       - name: loop_link
         label: …or moving thumbnail from a video link
         type: string
@@ -241,3 +241,27 @@ content:
       - name: bio_de
         label: Short bio (German)
         type: text
+
+  - name: privacy-en
+    label: Privacy policy (English)
+    type: file
+    path: content/legal/privacy-en.md
+    fields:
+      - name: title
+        label: Page title
+        type: string
+      - name: body
+        label: Text
+        type: rich-text
+
+  - name: privacy-de
+    label: Datenschutzerklärung (Deutsch)
+    type: file
+    path: content/legal/privacy-de.md
+    fields:
+      - name: title
+        label: Seitentitel
+        type: string
+      - name: body
+        label: Text
+        type: rich-text
