@@ -272,3 +272,16 @@ button.person-card { cursor: pointer; }
 .legal ul { margin: 0 0 28px; padding-left: 1.2em; }
 .legal a { overflow-wrap: anywhere; }
 .legal .caps, .legal p:has(> b:only-child) { font-size: 16px; letter-spacing: .02em; }
+
+/* Explore button + all-work page */
+.explore { margin: 56px 0 0; text-align: center; }
+.work-all { padding-top: 64px; padding-bottom: 120px; }
+.work-title { font-family: var(--serif); font-weight: 300; font-variation-settings: var(--soft); font-size: clamp(48px, 7vw, 96px); line-height: 1; margin: 0 0 48px; text-align: center; color: var(--paper); }
+.tiles-all { grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr)); gap: 22px; }
+.tiles-all .tile-client { font-size: clamp(28px, 2.6vw, 40px); }
+.tiles-all .tile-title { font-size: clamp(18px, 1.6vw, 22px); }
+.tile-cat { margin-top: 10px; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: rgba(246,243,236,.75); }
+.tile-plain { border: 1px solid var(--line-2); background: transparent; }
+.explore .button { background: transparent; border: 1px solid var(--line-2); color: var(--paper); font-weight: 500; }
+.explore .button:hover { border-color: var(--accent); color: var(--accent); background: transparent; }
+.explore .button { gap: 10px; }

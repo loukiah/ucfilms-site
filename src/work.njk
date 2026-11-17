@@ -1,0 +1,37 @@
+---
+pagination:
+  data: langs
+  size: 1
+  alias: lang
+langs: ["en", "de"]
+layout: base.njk
+permalink: "{{ routes.work[lang] }}"
+eleventyComputed:
+  pageKind: work
+  pageTitle: "{{ i18n[lang].work }}"
+  selfUrl: "{{ routes.work[lang] }}"
+  enUrl: "{{ routes.work.en }}"
+  deUrl: "{{ routes.work.de }}"
+---
+{%- from "macros.njk" import loopVideo, sayHello -%}
+{%- set L = i18n[lang] -%}
+<section class="work-all wrap">
+  <h1 class="work-title">{{ L.work_title | accent | safe }}</h1>
+  <ul class="tiles tiles-all" role="list">
+    {%- for p in projects.all %}
+    <li>
+      <a class="tile{% if not (p.loop or p.loop_link or p.poster) %} tile-plain{% endif %}" href="{{ p.slug | projectUrl(lang, routes) }}">
+        {%- if p.loop or p.loop_link %}{{ loopVideo(p, "tile-media") }}
+        {%- elif p.poster %}<img class="tile-media" src="{{ p.poster }}" alt="" loading="lazy">{% endif %}
+        <span class="tile-shade" aria-hidden="true"></span>
+        <span class="tile-text">
+          <span class="tile-client">{{ p.client }}</span>
+          {% set tt = p | t("title", lang) %}{% if tt %}<span class="tile-title">{{ tt }}</span>{% endif %}
+          {% set cat = p["category_" + lang] %}{% if cat %}<span class="tile-cat">{{ cat }}</span>{% endif %}
+        </span>
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+{{ sayHello(L, routes, lang) }}

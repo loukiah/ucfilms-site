@@ -41,8 +41,8 @@ eleventyComputed:
 {%- set extra = projects.extra -%}
 <section id="work" class="work wrap" aria-label="{{ L.work }}">
   <ul class="tiles" role="list">
-    {%- for p in featured.concat(extra) %}
-    <li{% if not p.home %} class="is-extra" hidden{% endif %}>
+    {%- for p in featured %}
+    <li>
       <a class="tile" href="{{ p.slug | projectUrl(lang, routes) }}">
         {{ loopVideo(p, "tile-media") }}
         <span class="tile-shade" aria-hidden="true"></span>
@@ -53,12 +53,11 @@ eleventyComputed:
       </a>
     </li>
     {%- endfor %}
-    {%- if extra.length %}
-    <li class="more-item"><button type="button" class="tile tile-more" data-more>{{ L.more_work }}</button></li>
-    {%- elif featured.length % 2 == 1 %}
+    {%- if featured.length % 2 == 1 %}
     <li class="next-item"><a class="tile tile-next" href="#contact"><span class="tile-client">{{ "Your project," if lang == "en" else "Euer Projekt," }} <em class="accent">{{ "next." if lang == "en" else "als Nächstes." }}</em></span></a></li>
     {%- endif %}
   </ul>
+  <p class="explore"><a class="button" href="{{ routes.work[lang] }}">{{ L.explore }} <span aria-hidden="true">→</span></a></p>
 </section>
 
 <section class="intro wrap">

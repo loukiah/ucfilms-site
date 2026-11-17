@@ -1,7 +1,7 @@
 [
   {
     "from": "/projects/",
-    "to": "/#work"
+    "to": "/work/"
   },
   {
     "from": "/privacy-policy/",
@@ -22,14 +22,6 @@
   {
     "from": "/projects/kangaroos/",
     "to": "/work/kangaroos-what-moves-you/"
-  },
-  {
-    "from": "/work/",
-    "to": "/#work"
-  },
-  {
-    "from": "/de/arbeiten/",
-    "to": "/de/#work"
   },
   {
     "from": "/projects/valerion-directors-journey/",
