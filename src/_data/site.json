@@ -77,8 +77,7 @@
     },
     {
       "name": "KangaROOS",
-      "logo": "/media/logos/kangaroos.png",
-      "tall": true
+      "logo": "/media/logos/kangaroos.png"
     }
   ],
   "bts": []
