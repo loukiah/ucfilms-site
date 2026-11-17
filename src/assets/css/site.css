@@ -415,3 +415,6 @@ button.person-card { cursor: pointer; }
   .project-summary { font-size: 18px; }
   .prose { font-size: 17px; }
 }
+/* KangaROOS: keep the kangaroo, but line the wordmark up with the others */
+.brand-list img.lift { max-height: 44px; position: relative; top: -11px; }
+@media (max-width: 640px) { .brand-list img.lift { max-height: 36px; top: -9px; } }
