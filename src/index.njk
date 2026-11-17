@@ -65,6 +65,15 @@ eleventyComputed:
   <a class="link-accent" href="{{ routes.about[lang] }}">{{ L.about_us }}</a>
 </section>
 
+{%- if site.bts and site.bts.length %}
+<section class="bts bts-home" aria-label="{{ 'Behind the scenes' if lang == 'en' else 'Hinter den Kulissen' }}">
+  <div class="bts-track">
+    {%- for img in site.bts %}<img src="{{ img }}" alt="" loading="lazy">{% endfor %}
+    {%- for img in site.bts %}<img src="{{ img }}" alt="" aria-hidden="true" loading="lazy">{% endfor %}
+  </div>
+</section>
+{%- endif %}
+
 {%- if site.brands and site.brands.length %}
 <section class="brands wrap" aria-label="{{ 'Brands we have worked with' if lang == 'en' else 'Marken, mit denen wir gearbeitet haben' }}">
   <ul class="brand-list" role="list">

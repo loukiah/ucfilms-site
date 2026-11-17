@@ -369,3 +369,6 @@ button.person-card { cursor: pointer; }
 @media (max-width: 640px) { .brand-list { gap: 20px 36px; } .brand-list img { max-height: 20px; max-width: 110px; } .brand-list img.tall { max-height: 36px; } }
 .person-plus { display: inline-block; margin-left: 6px; font-family: var(--sans); font-weight: 300; color: var(--accent); transition: transform .35s ease; }
 .person-card[aria-expanded="true"] .person-plus { transform: rotate(45deg); }
+.bts-home { margin: 0 0 96px; }
+@media (min-width: 900px) { .bts-track img { height: 280px; } }
+@media (min-width: 900px) { .brand-list { gap: 24px 36px; } .brand-list img { max-width: 112px; } }

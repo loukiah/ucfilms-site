@@ -60,13 +60,6 @@ eleventyComputed:
   </div>
 </section>
 
-{%- if site.bts and site.bts.length %}
-<section class="bts" aria-label="{{ 'Behind the scenes' if lang == 'en' else 'Hinter den Kulissen' }}">
-  <div class="bts-track">
-    {%- for img in site.bts %}<img src="{{ img }}" alt="" loading="lazy">{% endfor %}
-    {%- for img in site.bts %}<img src="{{ img }}" alt="" aria-hidden="true" loading="lazy">{% endfor %}
-  </div>
-</section>
-{%- endif %}
+
 
 {{ sayHello(L, routes, lang) }}

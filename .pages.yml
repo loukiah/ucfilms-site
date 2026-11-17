@@ -191,7 +191,8 @@ content:
             label: Stacked logo (show a bit bigger)
             type: boolean
       - name: bts
-        label: Behind-the-scenes photos (About page)
+        label: Behind-the-scenes photos (home page strip)
+        description: A slow-moving strip of set photos under the intro. Appears once you add photos; 6–12 landscape or portrait photos work well.
         type: image
         list: true
       - name: email
