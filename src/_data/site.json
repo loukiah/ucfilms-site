@@ -43,8 +43,35 @@
   "team_photo": "",
   "brands": [
     {
+      "name": "Volkswagen",
+      "logo": "/media/logos/vw.svg",
+      "tall": true
+    },
+    {
+      "name": "HOKA",
+      "logo": "/media/logos/hoka.svg"
+    },
+    {
       "name": "Roborock",
       "logo": "/media/logos/roborock.svg"
+    },
+    {
+      "name": "Radisson Collection",
+      "logo": "/media/logos/radisson.png"
+    },
+    {
+      "name": "Wolt",
+      "logo": "/media/logos/wolt.svg"
+    },
+    {
+      "name": "Fujifilm",
+      "logo": "/media/logos/fujifilm.svg"
+    },
+    {
+      "name": "KangaROOS",
+      "logo": "/media/logos/kangaroos.png",
+      "tall": true,
+      "shift": true
     },
     {
       "name": "Segway",
@@ -53,33 +80,6 @@
     {
       "name": "AWOL",
       "logo": "/media/logos/awol.png"
-    },
-    {
-      "name": "Fujifilm",
-      "logo": "/media/logos/fujifilm.svg"
-    },
-    {
-      "name": "Volkswagen",
-      "logo": "/media/logos/vw.svg",
-      "tall": true
-    },
-    {
-      "name": "Wolt",
-      "logo": "/media/logos/wolt.svg"
-    },
-    {
-      "name": "HOKA",
-      "logo": "/media/logos/hoka.svg"
-    },
-    {
-      "name": "Radisson Collection",
-      "logo": "/media/logos/radisson.png"
-    },
-    {
-      "name": "KangaROOS",
-      "logo": "/media/logos/kangaroos.png",
-      "tall": true,
-      "shift": true
     }
   ],
   "bts": []
