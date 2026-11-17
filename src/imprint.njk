@@ -1,0 +1,48 @@
+---
+pagination:
+  data: langs
+  size: 1
+  alias: lang
+langs: ["en", "de"]
+layout: base.njk
+permalink: "{{ routes.imprint[lang] }}"
+eleventyComputed:
+  pageKind: legal
+  pageTitle: "{{ i18n[lang].imprint }}"
+  selfUrl: "{{ routes.imprint[lang] }}"
+  enUrl: "{{ routes.imprint.en }}"
+  deUrl: "{{ routes.imprint.de }}"
+---
+<section class="legal wrap prose">
+{%- if lang == "de" %}
+<h1>Impressum</h1>
+<p>Angaben gemäß § 5 des Digitale-Dienste-Gesetzes (DDG)</p>
+<p>Omid Mohadjeri<br>Marchlewskistr. 111<br>10243 Berlin</p>
+<h2>Kontakt</h2>
+<p>E-Mail: <a href="mailto:hello@undercurent.com">hello@undercurent.com</a></p>
+<p>Für eine schnelle Kontaktaufnahme schreiben Sie bitte per E-Mail. Wir antworten in der Regel innerhalb von 24 Stunden an Werktagen.</p>
+<h2>Umsatzsteuer-ID</h2>
+<p>Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: DE405925787</p>
+<h2>EU-Streitschlichtung</h2>
+<p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" rel="noopener">https://ec.europa.eu/consumers/odr/</a>. Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
+<h2>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
+<p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+<h2>Zentrale Kontaktstelle nach dem Digital Services Act (DSA)</h2>
+<p>Unsere zentrale Kontaktstelle für Nutzer und Behörden nach Art. 11, 12 DSA erreichen Sie per E-Mail: <a href="mailto:omid@aztufilms.com">omid@aztufilms.com</a>. Die für den Kontakt zur Verfügung stehenden Sprachen sind Deutsch und Englisch.</p>
+{%- else %}
+<h1>Imprint</h1>
+<p>Information in accordance with § 5 of the German Digital Services Act (Digitale-Dienste-Gesetz, DDG)</p>
+<p>Omid Mohadjeri<br>Marchlewskistr. 111<br>10243 Berlin<br>Germany</p>
+<h2>Contact</h2>
+<p>E-mail: <a href="mailto:hello@undercurent.com">hello@undercurent.com</a></p>
+<p>For a prompt response, please contact us by e-mail. We usually respond within 24 hours on business days.</p>
+<h2>VAT ID</h2>
+<p>Value Added Tax Identification Number according to § 27a of the German Value Added Tax Act (UStG): DE405925787</p>
+<h2>EU online dispute resolution</h2>
+<p>The European Commission provides a platform for online dispute resolution (ODR): <a href="https://ec.europa.eu/consumers/odr/" rel="noopener">https://ec.europa.eu/consumers/odr/</a>. Our e-mail address can be found above.</p>
+<h2>Consumer dispute resolution</h2>
+<p>We are neither willing nor obliged to take part in dispute resolution proceedings before a consumer arbitration board.</p>
+<h2>Central point of contact under the Digital Services Act (DSA)</h2>
+<p>Our central point of contact for users and authorities under Articles 11 and 12 DSA can be reached by e-mail: <a href="mailto:omid@aztufilms.com">omid@aztufilms.com</a>. Languages available for contact: German and English.</p>
+{%- endif %}
+</section>

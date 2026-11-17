@@ -1,0 +1,17 @@
+{% macro wavePath() -%}
+M0,40 Q90,0 180,40 T360,40 T540,40 T720,40 T900,40 T1080,40 T1260,40 T1440,40 T1620,40 T1800,40 T1980,40 T2160,40 T2340,40 T2520,40 T2700,40 T2880,40
+{%- endmacro %}
+
+{% macro loopVideo(p, cls) -%}
+<video class="{{ cls }}" muted playsinline loop preload="none" aria-hidden="true"
+  {% if p.poster %}poster="{{ p.poster }}"{% endif %}
+  data-loop="{{ p.loop_link if p.loop_link else p.loop }}"
+  {% if p.loop_link %}data-start="{{ p.loop_start or 0 }}" data-length="10"{% endif %}></video>
+{%- endmacro %}
+
+{% macro sayHello(L, routes, lang) %}
+<section class="hello">
+  <h2 class="hello-title">{{ L.say }} <em class="accent">{{ L.hello }}</em></h2>
+  <a class="button" href="{{ routes.home[lang] }}#contact">{{ L.tell_us }}</a>
+</section>
+{% endmacro %}

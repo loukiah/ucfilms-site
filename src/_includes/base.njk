@@ -1,0 +1,59 @@
+{%- set L = i18n[lang] -%}
+{%- set desc = (description or site["seo_description_" + lang]) | plain | truncate(158) -%}
+{%- set fullTitle = (pageTitle + " | " + site.name) if pageTitle else (site.name + " | " + ("Creative production studio, Berlin" if lang == "en" else "Creative Production Studio, Berlin")) -%}
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ fullTitle }}</title>
+<meta name="description" content="{{ desc }}">
+<link rel="canonical" href="{{ site.url }}{{ selfUrl }}">
+<link rel="alternate" hreflang="en" href="{{ site.url }}{{ enUrl }}">
+<link rel="alternate" hreflang="de" href="{{ site.url }}{{ deUrl }}">
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ enUrl }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:title" content="{{ fullTitle }}">
+<meta property="og:description" content="{{ desc }}">
+<meta property="og:url" content="{{ site.url }}{{ selfUrl }}">
+<meta property="og:image" content="{{ (ogImage or '/media/og.jpg') | absolute(site.url) }}">
+<meta property="og:locale" content="{{ 'en_GB' if lang == 'en' else 'de_DE' }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0E0D0B">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/fraunces-latin-full-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/familjen-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+{%- if schema %}
+<script type="application/ld+json">{{ schema | json | safe }}</script>
+{%- endif %}
+</head>
+<body class="page-{{ pageKind }}">
+<a class="skip" href="#main">{{ "Skip to content" if lang == "en" else "Zum Inhalt springen" }}</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="{{ routes.home[lang] }}" aria-label="undercurrent films, {{ L.home }}">u/c</a>
+    <nav class="nav" aria-label="{{ 'Main' if lang == 'en' else 'Hauptnavigation' }}">
+      <a href="{{ routes.home[lang] }}#work"{% if pageKind == 'project' %} aria-current="true"{% endif %}>{{ L.work }}</a>
+      <a href="{{ routes.about[lang] }}"{% if pageKind == 'about' %} aria-current="page"{% endif %}>{{ L.about }}</a>
+      <a href="{{ routes.home[lang] }}#contact">{{ L.contact }}</a>
+      <a class="lang" href="{{ deUrl if lang == 'en' else enUrl }}" hreflang="{{ 'de' if lang == 'en' else 'en' }}" lang="{{ 'de' if lang == 'en' else 'en' }}" aria-label="{{ L.other_lang_name }}">{{ L.other_lang }}</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+{{ content | safe }}
+</main>
+<footer class="site-footer">
+  <nav class="wrap footer-inner" aria-label="Footer">
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    {% if site.instagram %}<a href="{{ site.instagram }}" rel="noopener">Instagram</a>{% endif %}
+    {% if site.linkedin %}<a href="{{ site.linkedin }}" rel="noopener">LinkedIn</a>{% endif %}
+    <a href="{{ routes.imprint[lang] }}">{{ L.imprint }}</a>
+    <a href="{{ routes.privacy[lang] }}">{{ L.privacy }}</a>
+  </nav>
+</footer>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

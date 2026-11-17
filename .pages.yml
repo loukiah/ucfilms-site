@@ -1,0 +1,243 @@
+# Pages CMS: the editor for ucfilms.de (app.pagescms.org)
+# Everything you can change without code is defined here.
+
+media:
+  input: src/media
+  output: /media
+
+content:
+  - name: projects
+    label: Projects
+    type: collection
+    path: content/projects
+    format: yaml-frontmatter
+    filename: "{fields.slug}.md"
+    view:
+      primary: client
+      fields: [client, title, home, order, published]
+    fields:
+      - name: client
+        label: Client
+        type: string
+        required: true
+      - name: title
+        label: Project title
+        type: string
+        description: Shown in italics after the client name, e.g. “Out of Time”.
+      - name: title_de
+        label: Project title (German)
+        type: string
+        description: Only if it should read differently in German.
+      - name: slug
+        label: Web address
+        type: string
+        required: true
+        description: Lowercase words with dashes, e.g. eyn-vas-out-of-time. The page will live at ucfilms.de/work/this-address. Don’t change it once the project is live.
+      - name: order
+        label: Position
+        type: number
+        default: 10
+        description: Lower numbers come first.
+      - name: home
+        label: Show on the home page
+        type: boolean
+        default: true
+        description: Projects that are off appear behind the “More work” button.
+      - name: published
+        label: Published
+        type: boolean
+        default: true
+        description: Switch off to hide the project everywhere without deleting it.
+      - name: summary_en
+        label: One-line summary (English)
+        type: text
+        required: true
+        description: Shown under the film and used by Google. One or two sentences.
+      - name: summary_de
+        label: One-line summary (German)
+        type: text
+      - name: story_en
+        label: The story (English)
+        type: rich-text
+        description: The longer case study, opened with “Read the story”.
+      - name: story_de
+        label: The story (German)
+        type: rich-text
+      - name: credits_en
+        label: Credits (English)
+        type: string
+      - name: credits_de
+        label: Credits (German)
+        type: string
+      - name: film
+        label: Full film link
+        type: string
+        description: Paste a YouTube, Vimeo or Bunny Stream link. It plays when someone clicks the play button.
+      - name: loop
+        label: Moving thumbnail (upload a clip)
+        type: file
+        description: A silent clip of 6–12 seconds, MP4, under about 20 MB. Used for the home page square and the top of the project page.
+      - name: loop_link
+        label: …or moving thumbnail from a video link
+        type: string
+        description: Instead of uploading a clip, paste a direct video link (for example a Bunny Stream MP4 link). The site plays 10 seconds from the start time below.
+      - name: loop_start
+        label: Start time for the link (seconds)
+        type: number
+        default: 0
+      - name: poster
+        label: Still image
+        type: image
+        description: Shown while the clip loads and when links are shared. Landscape works best.
+      - name: reels
+        label: Reels (vertical videos)
+        type: object
+        list: true
+        fields:
+          - name: video
+            label: Reel video
+            type: file
+            description: MP4, ideally under 20 MB. Plays silently; visitors can turn the sound on.
+          - name: poster
+            label: Still image
+            type: image
+      - name: photos
+        label: Photos
+        type: image
+        list: true
+      - name: client_website
+        label: Client website
+        type: string
+      - name: location
+        label: Location
+        type: string
+        hidden: true
+      - name: year
+        label: Year
+        type: string
+        hidden: true
+      - name: category_en
+        label: Category (English)
+        type: string
+        hidden: true
+      - name: category_de
+        label: Category (German)
+        type: string
+        hidden: true
+
+  - name: site
+    label: Site texts
+    type: file
+    path: src/_data/site.json
+    format: json
+    fields:
+      - name: tagline_lead_en
+        label: Home tagline, start (English)
+        type: string
+      - name: tagline_words_en
+        label: Home tagline, changing words (English)
+        type: string
+        list: true
+      - name: tagline_lead_de
+        label: Home tagline, start (German)
+        type: string
+      - name: tagline_words_de
+        label: Home tagline, changing words (German)
+        type: string
+        list: true
+      - name: intro_en
+        label: Home studio sentence (English)
+        type: text
+        description: Put words between *stars* to set them in italics.
+      - name: intro_de
+        label: Home studio sentence (German)
+        type: text
+      - name: about_lead_en
+        label: About headline, start (English)
+        type: string
+      - name: about_flips_en
+        label: About headline, changing endings (English)
+        type: string
+        list: true
+      - name: about_lead_de
+        label: About headline, start (German)
+        type: string
+      - name: about_flips_de
+        label: About headline, changing endings (German)
+        type: string
+        list: true
+      - name: about_text_en
+        label: About text (English)
+        type: rich-text
+      - name: about_text_de
+        label: About text (German)
+        type: rich-text
+      - name: team_photo
+        label: Team photo (About page)
+        type: image
+      - name: brands
+        label: Brand logos (home page)
+        type: object
+        list: true
+        description: The row only appears once at least one logo is added. White or transparent PNG/SVG work best.
+        fields:
+          - name: name
+            label: Brand name
+            type: string
+          - name: logo
+            label: Logo
+            type: image
+      - name: bts
+        label: Behind-the-scenes photos (About page)
+        type: image
+        list: true
+      - name: email
+        label: Contact email
+        type: string
+      - name: instagram
+        label: Instagram link
+        type: string
+      - name: linkedin
+        label: LinkedIn link
+        type: string
+      - name: seo_description_en
+        label: Google description (English)
+        type: text
+      - name: seo_description_de
+        label: Google description (German)
+        type: text
+      - name: url
+        label: Site address
+        type: string
+        hidden: true
+      - name: name
+        label: Site name
+        type: string
+        hidden: true
+
+  - name: team
+    label: Team
+    type: file
+    path: src/_data/team.json
+    format: json
+    list: true
+    fields:
+      - name: name
+        label: Name
+        type: string
+      - name: role_en
+        label: Role (English)
+        type: string
+      - name: role_de
+        label: Role (German)
+        type: string
+      - name: photo
+        label: Portrait
+        type: image
+      - name: bio_en
+        label: Short bio (English)
+        type: text
+        description: Optional. If filled in, the name becomes clickable on the About page.
+      - name: bio_de
+        label: Short bio (German)
+        type: text

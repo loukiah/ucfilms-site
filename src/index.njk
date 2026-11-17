@@ -1,0 +1,110 @@
+---
+pagination:
+  data: langs
+  size: 1
+  alias: lang
+langs: ["en", "de"]
+layout: base.njk
+permalink: "{{ routes.home[lang] }}"
+eleventyComputed:
+  pageKind: home
+  selfUrl: "{{ routes.home[lang] }}"
+  enUrl: "{{ routes.home.en }}"
+  deUrl: "{{ routes.home.de }}"
+  schema:
+    "@context": "https://schema.org"
+    "@type": "Organization"
+    name: "undercurrent films"
+    url: "https://ucfilms.de"
+    email: "hello@undercurent.com"
+    logo: "https://ucfilms.de/assets/favicon.svg"
+    address:
+      "@type": "PostalAddress"
+      streetAddress: "Marchlewskistr. 111"
+      postalCode: "10243"
+      addressLocality: "Berlin"
+      addressCountry: "DE"
+    sameAs:
+      - "https://www.instagram.com/under.curent"
+      - "https://www.linkedin.com/company/under-curent/"
+---
+{%- from "macros.njk" import loopVideo, wavePath -%}
+{%- set L = i18n[lang] -%}
+{%- set words = site["tagline_words_" + lang] -%}
+<section class="hero" data-hero>
+  <h1 class="wordmark"><span>undercurrent</span><span class="sr-only"> films</span></h1>
+  <canvas class="waves" aria-hidden="true" data-waves></canvas>
+  <p class="tagline">{{ site["tagline_lead_" + lang] }} <em class="accent rotate" data-rotate="{{ words | json | escape }}">{{ words[0] }}</em></p>
+</section>
+
+{%- set featured = projects.featured -%}
+{%- set extra = projects.extra -%}
+<section id="work" class="work wrap" aria-label="{{ L.work }}">
+  <ul class="tiles" role="list">
+    {%- for p in featured.concat(extra) %}
+    <li{% if not p.home %} class="is-extra" hidden{% endif %}>
+      <a class="tile" href="{{ p.slug | projectUrl(lang, routes) }}">
+        {{ loopVideo(p, "tile-media") }}
+        <span class="tile-shade" aria-hidden="true"></span>
+        <span class="tile-text">
+          <span class="tile-client">{{ p.client }}</span>
+          {% set tt = p | t("title", lang) %}{% if tt %}<span class="tile-title">{{ tt }}</span>{% endif %}
+        </span>
+      </a>
+    </li>
+    {%- endfor %}
+    {%- if extra.length %}
+    <li class="more-item"><button type="button" class="tile tile-more" data-more>{{ L.more_work }}</button></li>
+    {%- elif featured.length % 2 == 1 %}
+    <li class="next-item"><a class="tile tile-next" href="#contact"><span class="tile-client">{{ "Your project," if lang == "en" else "Euer Projekt," }} <em class="accent">{{ "next." if lang == "en" else "als Nächstes." }}</em></span></a></li>
+    {%- endif %}
+  </ul>
+</section>
+
+<section class="intro wrap">
+  <p class="intro-text">{{ site["intro_" + lang] | accent | safe }}</p>
+  <a class="link-accent" href="{{ routes.about[lang] }}">{{ L.about_us }}</a>
+</section>
+
+{%- if site.brands and site.brands.length %}
+<section class="brands wrap" aria-label="{{ 'Brands we have worked with' if lang == 'en' else 'Marken, mit denen wir gearbeitet haben' }}">
+  <ul class="brand-list" role="list">
+    {%- for b in site.brands %}
+    <li>{% if b.logo %}<img src="{{ b.logo }}" alt="{{ b.name }}" loading="lazy">{% else %}<span>{{ b.name }}</span>{% endif %}</li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endif %}
+
+<section id="contact" class="contact" data-contact>
+  <div class="contact-inner">
+    <h2 class="contact-q"><label for="contact-bar"><span data-lead>{{ L.contact_steps[0].lead }}</span> <em class="accent" data-tail>{{ L.contact_steps[0].tail }}</em></label></h2>
+    <div class="bar">
+      <input id="contact-bar" type="text" autocomplete="off" data-input>
+      <button type="button" class="bar-next" aria-label="{{ L.contact_next }}" data-next>
+        <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M13 5l7 7-7 7"/></svg>
+      </button>
+      <a class="button bar-send" href="mailto:{{ site.email }}" data-send hidden>{{ L.contact_send }}</a>
+    </div>
+    <div class="bar-line" aria-hidden="true">
+      <span class="bar-progress" data-progress><svg viewBox="0 0 2880 80" preserveAspectRatio="none" fill="none"><path d="{{ wavePath() }}" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke"/></svg></span>
+    </div>
+    <div class="ideas" role="group" aria-label="{{ 'Ideas' if lang == 'en' else 'Ideen' }}" data-ideas>
+      {%- for idea in L.contact_ideas %}
+      <button type="button" data-idea="{{ idea }}">{{ idea }}</button>
+      {%- endfor %}
+    </div>
+    <button type="button" class="bar-back" data-back hidden>{{ L.contact_back }}</button>
+    <noscript><p class="contact-fallback"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p></noscript>
+  </div>
+  <script type="application/json" data-contact-config>{{ {
+    email: site.email,
+    steps: L.contact_steps,
+    examples: L.contact_examples,
+    subject: L.mail_subject,
+    intro: L.mail_intro,
+    need: L.mail_need,
+    from: L.mail_from,
+    reach: L.mail_reach
+  } | json | safe }}</script>
+</section>

@@ -1,0 +1,10 @@
+[
+  { "from": "/projects/", "to": "/#work" },
+  { "from": "/privacy-policy/", "to": "/privacy/" },
+  { "from": "/projects/space-time-architects-brand-film/", "to": "/work/space-time-architects/" },
+  { "from": "/projects/mimosa-collection/", "to": "/work/mimosa-sylt/" },
+  { "from": "/projects/eynvas-out-of-time/", "to": "/work/eyn-vas-out-of-time/" },
+  { "from": "/projects/kangaroos/", "to": "/work/kangaroos-what-moves-you/" },
+  { "from": "/work/", "to": "/#work" },
+  { "from": "/de/arbeiten/", "to": "/de/#work" }
+]

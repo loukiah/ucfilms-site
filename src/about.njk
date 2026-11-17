@@ -1,0 +1,72 @@
+---
+pagination:
+  data: langs
+  size: 1
+  alias: lang
+langs: ["en", "de"]
+layout: base.njk
+permalink: "{{ routes.about[lang] }}"
+eleventyComputed:
+  pageKind: about
+  pageTitle: "{{ i18n[lang].about }}"
+  selfUrl: "{{ routes.about[lang] }}"
+  enUrl: "{{ routes.about.en }}"
+  deUrl: "{{ routes.about.de }}"
+  description: "{{ site['about_text_' + lang] }}"
+---
+{%- from "macros.njk" import sayHello, wavePath -%}
+{%- set L = i18n[lang] -%}
+{%- set flips = site["about_flips_" + lang] -%}
+<section class="about wrap">
+  <h1 class="about-title" aria-label="{{ site['about_lead_' + lang] }} {{ flips | join(' ') }}">
+    <span aria-hidden="true">{{ site["about_lead_" + lang] }}</span>
+    <em class="accent rotate" aria-hidden="true" data-rotate="{{ flips | json | escape }}" data-interval="2400">{{ flips[0] }}</em>
+  </h1>
+  <div class="about-body{% if not site.team_photo %} no-photo{% endif %}">
+    <div class="prose">{{ site["about_text_" + lang] | rich | safe }}</div>
+    {%- if site.team_photo %}
+    <img class="about-photo" src="{{ site.team_photo }}" alt="{{ 'The undercurrent team' if lang == 'en' else 'Das undercurrent Team' }}" loading="lazy">
+    {%- endif %}
+  </div>
+</section>
+
+<section class="team" aria-label="Team">
+  <div class="wrap">
+    <ul class="team-list{% if not team[0].photo and not team[1].photo %} no-photos{% endif %}" role="list">
+      {%- for m in team %}
+      {%- set bio = m | t("bio", lang) %}
+      <li class="person">
+        {%- if bio %}
+        <button type="button" class="person-card" aria-expanded="false" aria-controls="bio-{{ loop.index }}" data-person>
+        {%- else %}
+        <div class="person-card">
+        {%- endif %}
+          {%- if m.photo %}<img class="person-photo" src="{{ m.photo }}" alt="{{ m.name }}" loading="lazy">{% endif %}
+          <span class="person-name">{{ m.name }}</span>
+          <span class="person-role">{{ m | t("role", lang) }}</span>
+        {%- if bio %}</button>{% else %}</div>{% endif %}
+      </li>
+      {%- endfor %}
+    </ul>
+    {%- for m in team %}
+    {%- set bio = m | t("bio", lang) %}
+    {%- if bio %}
+    <div class="bio" id="bio-{{ loop.index }}" hidden>
+      <div class="bio-wave" aria-hidden="true"><svg viewBox="0 0 2880 80" preserveAspectRatio="none" fill="none"><path d="{{ wavePath() }}" stroke="currentColor" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg></div>
+      <p>{{ bio }}</p>
+    </div>
+    {%- endif %}
+    {%- endfor %}
+  </div>
+</section>
+
+{%- if site.bts and site.bts.length %}
+<section class="bts" aria-label="{{ 'Behind the scenes' if lang == 'en' else 'Hinter den Kulissen' }}">
+  <div class="bts-track">
+    {%- for img in site.bts %}<img src="{{ img }}" alt="" loading="lazy">{% endfor %}
+    {%- for img in site.bts %}<img src="{{ img }}" alt="" aria-hidden="true" loading="lazy">{% endfor %}
+  </div>
+</section>
+{%- endif %}
+
+{{ sayHello(L, routes, lang) }}

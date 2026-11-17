@@ -1,0 +1,27 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{%- set pages = [routes.home, routes.about, routes.imprint, routes.privacy] %}
+{%- for r in pages %}
+{%- for lang in ["en", "de"] %}
+  <url>
+    <loc>{{ site.url }}{{ r[lang] }}</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}{{ r.en }}"/>
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}{{ r.de }}"/>
+  </url>
+{%- endfor %}
+{%- endfor %}
+{%- for p in projects.all %}
+{%- set slug = p.slug %}
+{%- for lang in ["en", "de"] %}
+  <url>
+    <loc>{{ site.url }}{{ routes.work[lang] }}{{ slug }}/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}{{ routes.work.en }}{{ slug }}/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="{{ site.url }}{{ routes.work.de }}{{ slug }}/"/>
+  </url>
+{%- endfor %}
+{%- endfor %}
+</urlset>

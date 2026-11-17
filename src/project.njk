@@ -1,0 +1,85 @@
+---
+pagination:
+  data: projects.pages
+  size: 1
+  alias: entry
+layout: base.njk
+permalink: "{{ routes.work[entry.lang] }}{{ entry.slug }}/"
+eleventyComputed:
+  lang: "{{ entry.lang }}"
+  pageKind: project
+  pageTitle: "{{ entry.project.client }}{% set tt = entry.project | t('title', entry.lang) %}{% if tt %}: {{ tt }}{% endif %}"
+  selfUrl: "{{ routes.work[entry.lang] }}{{ entry.slug }}/"
+  enUrl: "{{ routes.work.en }}{{ entry.slug }}/"
+  deUrl: "{{ routes.work.de }}{{ entry.slug }}/"
+  description: "{{ entry.project | t('summary', entry.lang) }}"
+  ogImage: "{{ entry.project.poster }}"
+---
+{%- from "macros.njk" import loopVideo, sayHello -%}
+{%- set p = entry.project -%}
+{%- set L = i18n[lang] -%}
+{%- set film = p.film | embed -%}
+{%- set story = p | t("story", lang) -%}
+{%- set credits = p | t("credits", lang) -%}
+<article class="project">
+  <header class="project-head wrap">
+    {% set ptitle = p | t("title", lang) %}<h1 class="project-title">{{ p.client }}{% if ptitle %} <em class="accent">{{ ptitle }}</em>{% endif %}</h1>
+  </header>
+
+  <div class="wrap">
+    <div class="film" data-film{% if film %} data-embed="{{ film.src }}" data-kind="{{ film.kind }}"{% endif %}>
+      {{ loopVideo(p, "film-media") }}
+      {%- if film %}
+      <button type="button" class="film-play" data-play aria-label="{{ L.play_film }}: {{ p.client }}">
+        <svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M8 5l11 7-11 7z"/></svg>
+      </button>
+      {%- endif %}
+    </div>
+  </div>
+
+  <div class="project-body wrap">
+    <p class="project-summary">{{ p | t("summary", lang) }}</p>
+    {%- if story %}
+    <button type="button" class="pill" aria-expanded="false" aria-controls="story" data-story data-open-label="{{ L.read_story }}" data-close-label="{{ L.close_story }}">{{ L.read_story }}</button>
+    <div class="story prose" id="story" hidden>
+      {{ story | rich | safe }}
+      {%- if credits %}<p class="credits">{{ credits }}</p>{% endif %}
+      {%- if p.client_website %}<p class="credits"><a href="{{ p.client_website }}" rel="noopener">{{ L.client_site }} →</a></p>{% endif %}
+    </div>
+    {%- endif %}
+  </div>
+
+  {%- if p.reels and p.reels.length %}
+  <section class="reels wrap" aria-label="Reels">
+    <ul class="reel-list" role="list">
+      {%- for r in p.reels %}
+      <li class="reel">
+        <video class="reel-media" muted playsinline loop preload="none" {% if r.poster %}poster="{{ r.poster }}"{% endif %} data-loop="{{ r.video }}"></video>
+        <button type="button" class="reel-sound" data-sound data-on="{{ L.unmute }}" data-off="{{ L.mute }}">{{ L.unmute }}</button>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+
+  {%- if p.photos and p.photos.length %}
+  <section class="photos wrap" aria-label="{{ 'Photos' if lang == 'en' else 'Fotos' }}">
+    <ul class="photo-list" role="list">
+      {%- for img in p.photos %}
+      <li><img src="{{ img }}" alt="{{ p.client }}{% if p.title %}, {{ p.title }}{% endif %}" loading="lazy"></li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+
+  {%- if entry.nextSlug != entry.slug %}
+  <nav class="next wrap" aria-label="{{ L.next }}">
+    <a class="next-link" href="{{ routes.work[lang] }}{{ entry.nextSlug }}/">
+      <span class="next-label">{{ L.next }}</span>
+      <span class="next-name">{{ entry.next.client }} <em class="accent">→</em></span>
+    </a>
+  </nav>
+  {%- endif %}
+</article>
+
+{{ sayHello(L, routes, lang) }}

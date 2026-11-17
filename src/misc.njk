@@ -1,0 +1,19 @@
+---
+pagination:
+  data: redirects
+  size: 1
+  alias: r
+permalink: "{{ r.from }}index.html"
+eleventyExcludeFromCollections: true
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>undercurrent films</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="{{ site.url }}{{ r.to }}">
+<meta http-equiv="refresh" content="0; url={{ r.to }}">
+</head>
+<body><a href="{{ r.to }}">undercurrent films</a></body>
+</html>
