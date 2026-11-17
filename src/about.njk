@@ -42,7 +42,7 @@ eleventyComputed:
         <div class="person-card">
         {%- endif %}
           {%- if m.photo %}<img class="person-photo" src="{{ m.photo }}" alt="{{ m.name }}" loading="lazy">{% endif %}
-          <span class="person-name">{{ m.name }}</span>
+          <span class="person-name">{{ m.name }}{% if bio %} <span class="person-plus" aria-hidden="true">+</span>{% endif %}</span>
           <span class="person-role">{{ m | t("role", lang) }}</span>
         {%- if bio %}</button>{% else %}</div>{% endif %}
       </li>
