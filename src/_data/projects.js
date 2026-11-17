@@ -15,6 +15,11 @@ export default function () {
       const data = matter.read(path.join(DIR, f)).data || {};
       data.slug = String(data.slug || f.replace(/\.md$/, ""))
         .toLowerCase().trim().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+      // Ignore empty entries the editor can leave behind ({} or "").
+      data.reels = (Array.isArray(data.reels) ? data.reels : []).filter((r) => r && r.video);
+      data.photos = (Array.isArray(data.photos) ? data.photos : [])
+        .map((x) => (typeof x === "string" ? x : x && (x.src || x.image || x.path)))
+        .filter(Boolean);
       return data;
     })
     .filter((p) => p.published !== false && p.client)

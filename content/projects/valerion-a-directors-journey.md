@@ -44,7 +44,10 @@ loop: /media/valerion-loop.mp4
 loop_start: 0
 poster: /media/valerion-poster.jpg
 reels:
-  - {}
+  - video: /media/valerion-reel-1.mp4
+    poster: /media/valerion-reel-1.jpg
+photos:
+  - /media/valerion-photo-1.jpg
 client_website: https://valerion.com
 location: Berlin
 category_en: Branded content film
