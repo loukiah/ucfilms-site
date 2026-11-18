@@ -1,6 +1,6 @@
 {%- set L = i18n[lang] -%}
 {%- set desc = (description or site["seo_description_" + lang]) | plain | truncate(158) -%}
-{%- set fullTitle = (pageTitle + " | " + site.name) if pageTitle else (site.name + " | " + ("Creative production company, Berlin" if lang == "en" else "Creative Production Company, Berlin")) -%}
+{%- set fullTitle = (pageTitle + " | " + site.name) if pageTitle else (site.name + " | " + ("Film production company, Berlin" if lang == "en" else "Filmproduktion, Berlin")) -%}
 <!doctype html>
 <html lang="{{ lang }}">
 <head>
