@@ -35,7 +35,7 @@ We would like to point out that data transmission over the Internet (e.g. when c
 <p>The controller responsible for data processing on this website is:</p>
 <p>Omid Mohadjeri<br/>Marchlewskistr. 111<br/>
 10243 Berlin<br/>
-E-mail: omid {at} undercurent.com</p>
+E-mail: omid {at} ucfilms.de</p>
 <p>The controller is the natural or legal person who alone or jointly with others determines the purposes and means of the processing of personal data (e.g. names, e-mail addresses, etc.).</p>
 <h3>Storage duration</h3>
 <p>Unless a more specific storage period has been specified in this privacy policy, your personal data will remain with us until the purpose for data processing no longer applies. If you assert a justified request for deletion or revoke your consent to data processing, your data will be deleted unless we have other legally permissible reasons for storing your personal data (e.g. retention periods under tax or commercial law); in the latter case, the deletion will take place after these reasons no longer apply.</p>
