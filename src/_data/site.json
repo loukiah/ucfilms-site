@@ -1,29 +1,21 @@
 {
-  "url": "https://ucfilms.de",
-  "name": "undercurrent films",
-  "email": "hello@ucfilms.de",
-  "instagram": "https://www.instagram.com/under.curent",
-  "linkedin": "https://www.linkedin.com/company/under-curent/",
-  "seo_description_en": "undercurrent films is a film production company based in Berlin, making films, content and campaigns for brands, from the first idea to the final cut.",
-  "seo_description_de": "undercurrent films ist eine Filmproduktion mit Sitz in Berlin. Wir machen Filme, Content und Kampagnen für Marken, von der ersten Idee bis zum finalen Schnitt.",
   "tagline_lead_en": "Brand stories, made with",
-  "tagline_lead_de": "Markengeschichten, gemacht mit",
   "tagline_words_en": [
     "care.",
     "good people.",
     "a lighter footprint.",
     "curiosity."
   ],
+  "tagline_lead_de": "Wir erzählen Markengeschichten. Mit",
   "tagline_words_de": [
     "Sorgfalt.",
-    "guten Menschen.",
+    "talentierten Menschen.",
     "kleinem Fußabdruck.",
     "Neugier."
   ],
   "intro_en": "A film production company based in Berlin. We unite idea and production, bring in *talent we believe in*, and make work that feels human.",
   "intro_de": "Eine Filmproduktion mit Sitz in Berlin. Wir verbinden Idee und Produktion, holen *Talente, an die wir glauben*, und machen Arbeiten, die sich menschlich anfühlen.",
   "about_lead_en": "undercurrent is",
-  "about_lead_de": "undercurrent ist",
   "about_flips_en": [
     "small on purpose.",
     "bigger when it’s needed.",
@@ -31,6 +23,7 @@
     "serious about craft.",
     "kind on set."
   ],
+  "about_lead_de": "undercurrent ist",
   "about_flips_de": [
     "klein aus Überzeugung.",
     "größer, wenn es sein muss.",
@@ -38,9 +31,8 @@
     "genau beim Handwerk.",
     "freundlich am Set."
   ],
-  "about_text_en": "<p>undercurrent is a film production company based in Berlin. We make films, content and campaigns for brands, and we care about how the work gets made as much as how it looks.</p><p>We like to get to know a brand before we suggest anything. Then we build the idea, the team and the shoot around what we’ve learned. Sometimes that turns into a single film, like a fashion piece shot in the dunes of the Alentejo. Sometimes it becomes a long collaboration, like the films and monthly content we make for Space Time Architects from their journeys through Egypt, Saudi Arabia and Oman.</p><p>We scale to the job. Some ideas need a lean, hand-picked crew that can move fast. Others need a full production with every department on set. We build each team from people we trust, with newcomers working alongside experienced hands. Either way you talk to us directly, from the first call to the final cut.</p><p>We plan each production to waste as little as we can, and a growing part of our work is for international brands speaking to people in Europe.</p>",
-  "about_text_de": "<p>undercurrent ist eine Filmproduktion mit Sitz in Berlin. Wir machen Filme, Content und Kampagnen für Marken, und uns ist wichtig, wie eine Arbeit entsteht, genauso wie, wie sie aussieht.</p><p>Wir lernen eine Marke gern kennen, bevor wir etwas vorschlagen. Dann bauen wir Idee, Team und Dreh um das, was wir gelernt haben. Manchmal wird daraus ein einzelner Film, wie ein Fashion-Film in den Dünen des Alentejo. Manchmal eine lange Zusammenarbeit, wie die Filme und der monatliche Content, den wir für Space Time Architects von ihren Reisen durch Ägypten, Saudi-Arabien und Oman machen.</p><p>Wir richten uns nach dem Projekt. Manche Ideen brauchen ein kleines, handverlesenes Team, das schnell ist. Andere brauchen eine volle Produktion mit allen Departments am Set. Jedes Team stellen wir aus Leuten zusammen, denen wir vertrauen, Nachwuchs arbeitet neben erfahrenen Profis. So oder so sprecht ihr direkt mit uns, vom ersten Gespräch bis zum finalen Schnitt.</p><p>Wir planen jede Produktion so, dass möglichst wenig verschwendet wird, und ein wachsender Teil unserer Arbeit ist für internationale Marken, die Menschen in Europa erreichen wollen.</p>",
-  "team_photo": "",
+  "about_text_en": "undercurrent is a film production company based in Berlin. We make films, content and campaigns for brands, and we care about how the work gets made as much as how it looks.\n\nWe like to get to know a brand before we suggest anything. Then we build the idea, the team and the shoot around what we’ve learned. Sometimes that turns into a single film, like a fashion piece shot in the dunes of the Alentejo. Sometimes it becomes a long collaboration, like the films and monthly content we make for Space Time Architects from their journeys through Egypt, Saudi Arabia and Oman.\n\nWe scale to the job. Some ideas need a lean, hand-picked crew that can move fast. Others need a full production with every department on set. We build each team from people we trust, with newcomers working alongside experienced hands. Either way you talk to us directly, from the first call to the final cut.\n\nWe plan each production to waste as little as we can, and a growing part of our work is for international brands speaking to people in Europe.",
+  "about_text_de": "undercurrent ist eine Filmproduktion mit Sitz in Berlin. Wir machen Filme, Content und Kampagnen für Marken, und uns ist wichtig, wie eine Arbeit entsteht, genauso wie, wie sie aussieht.\n\nWir lernen eine Marke gern kennen, bevor wir etwas vorschlagen. Dann bauen wir Idee, Team und Dreh um das, was wir gelernt haben. Manchmal wird daraus ein einzelner Film, wie ein Fashion-Film in den Dünen des Alentejo. Manchmal eine lange Zusammenarbeit, wie die Filme und der monatliche Content, den wir für Space Time Architects von ihren Reisen durch Ägypten, Saudi-Arabien und Oman machen.\n\nWir richten uns nach dem Projekt. Manche Ideen brauchen ein kleines, handverlesenes Team, das schnell ist. Andere brauchen eine volle Produktion mit allen Departments am Set. Jedes Team stellen wir aus Leuten zusammen, denen wir vertrauen, Nachwuchs arbeitet neben erfahrenen Profis. So oder so sprecht ihr direkt mit uns, vom ersten Gespräch bis zum finalen Schnitt.\n\nWir planen jede Produktion so, dass möglichst wenig verschwendet wird, und ein wachsender Teil unserer Arbeit ist für internationale Marken, die Menschen in Europa erreichen wollen.",
   "brands": [
     {
       "name": "Volkswagen",
@@ -49,38 +41,50 @@
     },
     {
       "name": "HOKA",
-      "logo": "/media/logos/hoka.svg"
+      "logo": "/media/logos/hoka.svg",
+      "tall": false
     },
     {
       "name": "Roborock",
-      "logo": "/media/logos/roborock.svg"
+      "logo": "/media/logos/roborock.svg",
+      "tall": false
     },
     {
       "name": "Radisson Collection",
-      "logo": "/media/logos/radisson.png"
+      "logo": "/media/logos/radisson.png",
+      "tall": false
     },
     {
       "name": "Wolt",
-      "logo": "/media/logos/wolt.svg"
+      "logo": "/media/logos/wolt.svg",
+      "tall": false
     },
     {
       "name": "Fujifilm",
-      "logo": "/media/logos/fujifilm.svg"
+      "logo": "/media/logos/fujifilm.svg",
+      "tall": false
     },
     {
       "name": "KangaROOS",
       "logo": "/media/logos/kangaroos.png",
-      "tall": true,
-      "shift": true
+      "tall": true
     },
     {
       "name": "Segway",
-      "logo": "/media/logos/segway.png"
+      "logo": "/media/logos/segway.png",
+      "tall": false
     },
     {
       "name": "AWOL",
-      "logo": "/media/logos/awol.png"
+      "logo": "/media/logos/awol.png",
+      "tall": false
     }
   ],
-  "bts": []
+  "email": "hello@ucfilms.de",
+  "instagram": "https://www.instagram.com/under.curent",
+  "linkedin": "https://www.linkedin.com/company/under-curent/",
+  "seo_description_en": "undercurrent films is a film production company based in Berlin, making films, content and campaigns for brands, from the first idea to the final cut.",
+  "seo_description_de": "undercurrent films ist eine Filmproduktion mit Sitz in Berlin. Wir machen Filme, Content und Kampagnen für Marken, von der ersten Idee bis zum finalen Schnitt.",
+  "url": "https://ucfilms.de",
+  "name": "undercurrent films"
 }
