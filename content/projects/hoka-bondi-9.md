@@ -4,7 +4,7 @@ title: Bondi 9 Challenge
 title_de: Bondi 9 Challenge
 slug: hoka-bondi-9
 order: 10
-home: true
+home: false
 published: true
 category_en: Social reel
 category_de: Social Reel
