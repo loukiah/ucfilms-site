@@ -73,6 +73,18 @@ content:
         label: Full film link
         type: string
         description: Paste a YouTube, Vimeo or Bunny Stream link. It plays when someone clicks the play button.
+      - name: more_films
+        label: More full films (optional)
+        type: object
+        list: true
+        description: Extra films shown under the main one, each with a play button.
+        fields:
+          - name: link
+            label: Film link (YouTube, Vimeo or Bunny)
+            type: string
+          - name: poster
+            label: Still image
+            type: image
       - name: film_format
         label: Film format
         type: select

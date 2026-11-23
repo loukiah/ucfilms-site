@@ -18,7 +18,10 @@ story_de: >-
   <p>Für Space Time Architects, eine neue Luxus-Reisemarke, erzählen wir die Reisen in filmischen Geschichten. Dieser Trailer folgt ihrer letzten Expedition durch El Gouna, Al Siwa, St. Catherine, Dschidda, AlUla, Red Sea Global, Salalah und Maskat und fängt Landschaften, Erlebnisse und die Atmosphäre jedes Ortes ein.</p><p>Neben den langen Formaten produzieren wir monatlich kurze Inhalte für Social Media: Reels und Social-First-Schnitte, die das Wesen jeder Reise transportieren. Als fester Partner prägen wir die visuelle Identität und den erzählerischen Ton der Marke über alle Kanäle mit.</p>
 credits_en: "Purpose: Visual brand identity through trailers, documentaries and social content · Production and creative direction: undercurrent"
 credits_de: "Zweck: Visuelle Markenidentität durch Trailer, Dokumentationen und Social Content · Produktion und Creative Direction: undercurrent"
-film: https://youtu.be/n7CKXvi_SIM
+film: https://youtu.be/Xnjw9231SzU
+more_films:
+  - link: https://youtu.be/PE0ZsRVIGjA
+    poster: /media/space-time-architects-reel-2.jpg
 loop: /media/space-time-architects-loop.mp4
 loop_link: ""
 loop_start: 0

@@ -37,6 +37,19 @@ eleventyComputed:
     </div>
   </div>
 
+  {%- if p.more_films and p.more_films.length %}
+  <div class="wrap more-films">
+    {%- for mf in p.more_films %}{% set e = mf.link | embed %}{% if e %}
+    <div class="film" data-film data-embed="{{ e.src }}" data-kind="{{ e.kind }}">
+      {%- if mf.poster %}<img class="film-media" src="{{ mf.poster }}" alt="" loading="lazy">{% endif %}
+      <button type="button" class="film-play" data-play aria-label="{{ L.play_film }}: {{ p.client }} {{ loop.index + 1 }}">
+        <svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M8 5l11 7-11 7z"/></svg>
+      </button>
+    </div>
+    {%- endif %}{% endfor %}
+  </div>
+  {%- endif %}
+
   <div class="project-body wrap">
     <p class="project-summary">{{ p | t("summary", lang) }}</p>
     {%- if story %}

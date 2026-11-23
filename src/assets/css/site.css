@@ -463,3 +463,7 @@ button.person-card { cursor: pointer; }
 .film--vertical .film-play { width: 76px; height: 76px; }
 @media (max-width: 899px) { .tiles .next-item { display: none; } }
 @media (min-width: 900px) { .explore--mobile { display: none; } }
+
+/* Extra full films under the main one */
+.more-films { display: grid; gap: 20px; margin-top: 20px; }
+.more-films img.film-media { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
