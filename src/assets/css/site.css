@@ -472,3 +472,13 @@ button.person-card { cursor: pointer; }
 @media (min-width: 900px) { .wordmark { font-size: clamp(52px, 6.6vw, 96px); } }
 @media (max-width: 899px) { .wordmark { font-size: clamp(42px, 12vw, 72px); } }
 .work .tile-title { display: none; }
+
+/* Project pages: quieter title, smaller film */
+.project-head { padding-top: 48px; padding-bottom: 32px; }
+.project-title { font-size: clamp(24px, 2.2vw, 32px) !important; line-height: 1.15; }
+.project-title .accent { font-size: .82em; margin-top: 4px; color: var(--muted); }
+@media (min-width: 900px) {
+  .project .film:not(.film--vertical) { max-width: 960px; margin: 0 auto; }
+  .project .film--vertical { width: min(340px, 100%); }
+}
+@media (max-width: 899px) { .project-head { padding-top: 32px; padding-bottom: 24px; } .project-title { font-size: 24px !important; } }
