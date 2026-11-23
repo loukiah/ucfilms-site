@@ -213,14 +213,14 @@
       var on = btn.getAttribute("aria-pressed") !== "true";
       soundBtns.forEach(function (b) {
         if (b === btn) return;
-        b.setAttribute("aria-pressed", "false"); b.textContent = b.dataset.on;
+        b.setAttribute("aria-pressed", "false"); b.setAttribute("aria-label", b.dataset.on);
         var ov = b.parentElement.querySelector("video"); if (ov) ov.muted = true;
       });
       prepare(v);
       v.muted = !on;
       if (on) { v.currentTime = 0; v.play().catch(function () {}); }
       btn.setAttribute("aria-pressed", String(on));
-      btn.textContent = on ? btn.dataset.off : btn.dataset.on;
+      btn.setAttribute("aria-label", on ? btn.dataset.off : btn.dataset.on);
     });
   });
 

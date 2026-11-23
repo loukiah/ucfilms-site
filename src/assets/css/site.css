@@ -448,3 +448,12 @@ button.person-card { cursor: pointer; }
   .contact .bar input { min-height: 50px; font-size: 18px; }
   .contact .bar-next { width: 46px; height: 46px; }
 }
+
+/* Reels: small speaker icon in the corner (mute / unmute) */
+.reel-sound { left: auto; right: 10px; top: 10px; bottom: auto; width: 36px; height: 36px; min-height: 0; padding: 0; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgba(14,13,11,.45); color: #f6f3ec; opacity: .85; transition: opacity .2s ease, background .2s ease; }
+.reel-sound:hover { opacity: 1; background: rgba(14,13,11,.7); }
+.reel-sound[aria-pressed="true"] { background: rgba(14,13,11,.7); color: var(--accent); }
+.reel-sound .icon-sound { display: none; }
+.reel-sound[aria-pressed="true"] .icon-sound { display: block; }
+.reel-sound[aria-pressed="true"] .icon-muted { display: none; }
+.reel-sound::after { content: ""; position: absolute; inset: -6px; }
