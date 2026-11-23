@@ -8,14 +8,14 @@ home: true
 published: true
 category_en: Brand film, documentary and social content
 category_de: Markenfilm, Dokumentation und Social Content
-location: Egypt, Saudi Arabia, Oman
+location: Faroe Islands, Ireland, Scotland, Egypt, Saudi Arabia, Oman
 year: ""
-summary_en: Cinematic stories and monthly social content for Space Time Architects, a new luxury travel brand, filmed on their expeditions through Egypt, Saudi Arabia and Oman.
-summary_de: Filmische Geschichten und monatlicher Social Content für Space Time Architects, eine neue Luxus-Reisemarke, gedreht auf ihren Expeditionen durch Ägypten, Saudi-Arabien und Oman.
+summary_en: Cinematic documentaries and monthly social content for Space Time Architects, a luxury travel brand, filmed on their expeditions through the Faroe Islands, Ireland and Scotland, and through Egypt, Saudi Arabia and Oman.
+summary_de: Filmische Dokumentationen und monatlicher Social Content für Space Time Architects, eine Luxus-Reisemarke, gedreht auf ihren Expeditionen über die Färöer, Irland und Schottland sowie durch Ägypten, Saudi-Arabien und Oman.
 story_en: >-
-  <p>For Space Time Architects, a new luxury travel brand, we craft cinematic narratives that bring their journeys to life. So far we have followed two of their expeditions through Egypt, Saudi Arabia and Oman, and turned each one into a documentary that captures the landscapes, experiences and atmosphere of every destination.</p><p>Beyond long-form storytelling, we produce monthly short-form content for social media: reels and social-first edits that carry the essence of each trip. As an ongoing partner, we help shape the brand’s visual identity and narrative tone across all media.</p>
+  <p>For Space Time Architects, a new luxury travel brand, we craft cinematic narratives that bring their journeys to life. So far we have followed two of their expeditions and turned each into a cinematic documentary: this one across the Faroe Islands, Ireland and Scotland, and another through Egypt, Saudi Arabia and Oman, each capturing the landscapes, experiences and atmosphere of every destination.</p><p>Beyond long-form storytelling, we produce monthly short-form content for social media: reels and social-first edits that carry the essence of each trip. As an ongoing partner, we help shape the brand’s visual identity and narrative tone across all media.</p>
 story_de: >-
-  <p>Für Space Time Architects, eine neue Luxus-Reisemarke, erzählen wir die Reisen in filmischen Geschichten. Bisher haben wir zwei ihrer Expeditionen durch Ägypten, Saudi-Arabien und Oman begleitet und daraus jeweils eine Dokumentation gemacht, die Landschaften, Erlebnisse und die Atmosphäre jedes Ortes einfängt.</p><p>Neben den langen Formaten produzieren wir monatlich kurze Inhalte für Social Media: Reels und Social-First-Schnitte, die das Wesen jeder Reise transportieren. Als fester Partner prägen wir die visuelle Identität und den erzählerischen Ton der Marke über alle Kanäle mit.</p>
+  <p>Für Space Time Architects, eine neue Luxus-Reisemarke, erzählen wir die Reisen in filmischen Geschichten. Bisher haben wir zwei ihrer Expeditionen begleitet und daraus jeweils eine filmische Dokumentation gemacht: diese über die Färöer, Irland und Schottland, eine weitere durch Ägypten, Saudi-Arabien und Oman. Beide fangen Landschaften, Erlebnisse und die Atmosphäre jedes Ortes ein.</p><p>Neben den langen Formaten produzieren wir monatlich kurze Inhalte für Social Media: Reels und Social-First-Schnitte, die das Wesen jeder Reise transportieren. Als fester Partner prägen wir die visuelle Identität und den erzählerischen Ton der Marke über alle Kanäle mit.</p>
 credits_en: "Purpose: Visual brand identity through documentaries and social content · Production and creative direction: undercurrent"
 credits_de: "Zweck: Visuelle Markenidentität durch Dokumentationen und Social Content · Produktion und Creative Direction: undercurrent"
 film: https://youtu.be/Xnjw9231SzU
