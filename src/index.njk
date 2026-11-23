@@ -53,11 +53,14 @@ eleventyComputed:
       </a>
     </li>
     {%- endfor %}
-    {%- if featured.length % 3 == 2 %}
+    {%- if featured.length % 3 == 1 %}
+    <li class="next-item"><a class="tile tile-next" href="{{ routes.work[lang] }}"><span class="tile-client">{{ "All" if lang == "en" else "Alle" }} <em class="accent">{{ "work →" if lang == "en" else "Arbeiten →" }}</em></span></a></li>
+    {%- endif %}
+    {%- if featured.length % 3 != 0 %}
     <li class="next-item"><a class="tile tile-next" href="#contact"><span class="tile-client">{{ "Your project," if lang == "en" else "Euer Projekt," }} <em class="accent">{{ "next." if lang == "en" else "als Nächstes." }}</em></span></a></li>
     {%- endif %}
   </ul>
-  <p class="explore"><a class="explore-link" href="{{ routes.work[lang] }}">{{ L.explore }} <span aria-hidden="true">→</span></a></p>
+  <p class="explore{% if featured.length % 3 == 1 %} explore--mobile{% endif %}"><a class="explore-link" href="{{ routes.work[lang] }}">{{ L.explore }} <span aria-hidden="true">→</span></a></p>
 </section>
 
 <section class="intro wrap">

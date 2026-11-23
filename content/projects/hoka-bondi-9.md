@@ -20,10 +20,10 @@ credits_en: ""
 credits_de: ""
 film: https://youtu.be/lJsbEicrz_8
 film_format: vertical
-loop: ""
+loop: /media/hoka-loop.mp4
 loop_link: ""
 loop_start: 0
-poster: ""
+poster: /media/hoka-poster.jpg
 reels: []
 photos: []
 client_website: https://www.hoka.com
