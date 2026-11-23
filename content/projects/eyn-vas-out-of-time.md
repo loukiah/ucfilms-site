@@ -3,7 +3,7 @@ client: EYN VAS
 title: Out of Time
 slug: eyn-vas-out-of-time
 order: 7
-home: true
+home: false
 published: true
 category_en: Fashion film
 category_de: Fashion-Film
