@@ -467,3 +467,7 @@ button.person-card { cursor: pointer; }
 /* Extra full films under the main one */
 .more-films { display: grid; gap: 20px; margin-top: 20px; }
 .more-films img.film-media { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+/* Hero wordmark: smaller */
+@media (min-width: 900px) { .wordmark { font-size: clamp(52px, 6.6vw, 96px); } }
+@media (max-width: 899px) { .wordmark { font-size: clamp(42px, 12vw, 72px); } }
