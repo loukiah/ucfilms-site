@@ -1,13 +1,13 @@
 ---
 client: Space Time Architects
-title: Brand film and monthly content
-title_de: Markenfilm und monatlicher Content
+title: A Celtic Journey
+title_de: A Celtic Journey
 slug: space-time-architects
 order: 6
 home: true
 published: true
-category_en: Brand film, documentary and social content
-category_de: Markenfilm, Dokumentation und Social Content
+category_en: Documentary and social content
+category_de: Dokumentation und Social Content
 location: Faroe Islands, Ireland, Scotland, Egypt, Saudi Arabia, Oman
 year: ""
 summary_en: Cinematic documentaries and monthly social content for Space Time Architects, a luxury travel brand, filmed on their expeditions through the Faroe Islands, Ireland and Scotland, and through Egypt, Saudi Arabia and Oman.
