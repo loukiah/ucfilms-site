@@ -73,6 +73,16 @@ content:
         label: Full film link
         type: string
         description: Paste a YouTube, Vimeo or Bunny Stream link. It plays when someone clicks the play button.
+      - name: film_format
+        label: Film format
+        type: select
+        description: Choose "Vertical" if the film is a reel (9:16) with no landscape version. It then shows as a tall player in the middle of the page.
+        options:
+          values:
+            - value: horizontal
+              label: Horizontal (16:9)
+            - value: vertical
+              label: Vertical reel (9:16)
       - name: loop
         label: Moving thumbnail (upload a clip)
         type: file

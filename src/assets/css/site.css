@@ -457,3 +457,7 @@ button.person-card { cursor: pointer; }
 .reel-sound[aria-pressed="true"] .icon-sound { display: block; }
 .reel-sound[aria-pressed="true"] .icon-muted { display: none; }
 .reel-sound::after { content: ""; position: absolute; inset: -6px; }
+
+/* Vertical films (reels with no landscape version): tall player, centred */
+.film--vertical { aspect-ratio: 9 / 16; width: min(380px, 100%); margin: 0 auto; }
+.film--vertical .film-play { width: 76px; height: 76px; }

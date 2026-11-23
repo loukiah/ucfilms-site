@@ -27,7 +27,7 @@ eleventyComputed:
   </header>
 
   <div class="wrap">
-    <div class="film" data-film{% if film %} data-embed="{{ film.src }}" data-kind="{{ film.kind }}"{% endif %}>
+    <div class="film{% if p.film_format == 'vertical' or (p.film and '/shorts/' in p.film) %} film--vertical{% endif %}" data-film{% if film %} data-embed="{{ film.src }}" data-kind="{{ film.kind }}"{% endif %}>
       {{ loopVideo(p, "film-media") }}
       {%- if film %}
       <button type="button" class="film-play" data-play aria-label="{{ L.play_film }}: {{ p.client }}">

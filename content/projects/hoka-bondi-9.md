@@ -19,6 +19,7 @@ story_de: >-
 credits_en: ""
 credits_de: ""
 film: https://youtu.be/lJsbEicrz_8
+film_format: vertical
 loop: ""
 loop_link: ""
 loop_start: 0
