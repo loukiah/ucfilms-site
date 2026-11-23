@@ -431,3 +431,21 @@ button.person-card { cursor: pointer; }
 .explore-link span { transition: transform .3s ease; }
 .explore-link:hover, .explore-link:focus-visible { color: var(--accent); }
 .explore-link:hover span { transform: translateX(4px); }
+
+/* Contact field: a clear, rounded input box instead of the wave line */
+.contact .bar-line { display: none; }
+.contact .bar {
+  gap: 10px; padding: 6px 6px 6px 26px; border: 1px solid var(--line-2); border-radius: 999px;
+  background: rgba(246, 243, 236, 0.04); transition: border-color .25s ease, background .25s ease;
+}
+.contact .bar:hover { border-color: rgba(246, 243, 236, 0.35); }
+.contact .bar:focus-within { border-color: var(--accent); background: rgba(246, 243, 236, 0.06); }
+.contact .bar input { min-height: 52px; font-size: 19px; letter-spacing: 0; }
+.contact .bar-next { width: 52px; height: 52px; }
+.contact .bar-next svg { width: 22px; height: 22px; }
+.contact .bar .button { min-height: 52px; }
+@media (max-width: 640px) {
+  .contact .bar { padding: 4px 4px 4px 18px; }
+  .contact .bar input { min-height: 48px; font-size: 17px; }
+  .contact .bar-next { width: 48px; height: 48px; }
+}

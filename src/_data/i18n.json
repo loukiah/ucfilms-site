@@ -94,8 +94,8 @@
     "back_home": "Zu den Arbeiten",
     "contact_steps": [
       {
-        "lead": "Was dürfen wir",
-        "tail": "für euch machen?",
+        "lead": "Was habt ihr",
+        "tail": "vor?",
         "type": "text",
         "placeholder": ""
       },
