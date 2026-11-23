@@ -471,3 +471,4 @@ button.person-card { cursor: pointer; }
 /* Hero wordmark: smaller */
 @media (min-width: 900px) { .wordmark { font-size: clamp(52px, 6.6vw, 96px); } }
 @media (max-width: 899px) { .wordmark { font-size: clamp(42px, 12vw, 72px); } }
+.work .tile-title { display: none; }

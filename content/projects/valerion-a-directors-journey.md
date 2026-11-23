@@ -3,7 +3,7 @@ client: Valerion
 title: A Director’s Journey
 title_de: Ein treuer Begleiter
 slug: valerion-a-directors-journey
-order: 2
+order: 9
 home: true
 published: true
 summary_en: A film director’s life in Berlin intertwines with the Valerion laser
