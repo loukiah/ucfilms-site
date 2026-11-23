@@ -21,6 +21,7 @@ loop_link: ""
 loop_start: 0
 poster: ""
 reels: []
-photos: []
+photos:
+  - /media/navimow-photo-1.jpg
 client_website: ""
 ---
