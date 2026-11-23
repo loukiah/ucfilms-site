@@ -7,8 +7,8 @@ order: 2
 home: true
 published: true
 summary_en: A film director’s life in Berlin intertwines with the Valerion laser
-  projector, a quiet companion that becomes part of how she creates.
-summary_de: Das Leben einer Filmregisseurin in Berlin verwebt sich mit dem
+  projector, a quiet companion that becomes part of how he creates.
+summary_de: Das Leben einer Filmregisseur in Berlin verwebt sich mit dem
   Valerion-Laserprojektor, einem stillen Begleiter, der Teil ihres kreativen
   Alltags wird.
 story_en: >-
@@ -42,12 +42,6 @@ story_de: >-
 film: https://youtu.be/Rg65gVygt0c
 loop: /media/valerion-loop.mp4
 loop_start: 0
-poster: /media/valerion-poster.jpg
-reels:
-  - video: /media/valerion-reel-1.mp4
-    poster: /media/valerion-reel-1.jpg
-photos:
-  - /media/valerion-photo-1.jpg
 client_website: https://valerion.com
 location: Berlin
 category_en: Branded content film
