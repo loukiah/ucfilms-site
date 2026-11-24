@@ -20,7 +20,7 @@ credits_en: "Client: Roborock · Production: undercurrent · Creative direction:
 credits_de: "Kunde: Roborock · Produktion: undercurrent · Creative Direction: Loukia Hadjiyianni · Executive Producer: Hattie Yu · Producer: Omid Mohadjeri"
 film: /media/roborock-film.mp4
 film_format: horizontal
-loop: /media/roborock-loop-2.mp4
+loop: /media/roborock-loop-3.mp4
 loop_link: ""
 loop_start: 0
 poster: /media/roborock-poster-2.jpg
