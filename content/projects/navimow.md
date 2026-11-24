@@ -29,6 +29,8 @@ reels:
     poster: /media/navimow-reel-1.jpg
   - video: /media/navimow-reel-2.mp4
     poster: /media/navimow-reel-2.jpg
+  - video: /media/navimow-reel-3.mp4
+    poster: /media/navimow-reel-3.jpg
 photos:
   - /media/navimow-photo-1.jpg
 client_website: https://www.navimow.com
