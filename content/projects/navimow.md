@@ -20,10 +20,10 @@ credits_en: "Client: Navimow (Segway) · Production, direction and edit: undercu
 credits_de: "Kunde: Navimow (Segway) · Produktion, Regie und Schnitt: undercurrent"
 film: /media/navimow-film.mp4
 film_format: horizontal
-loop: /media/navimow-loop.mp4
+loop: /media/navimow-loop-2.mp4
 loop_link: ""
 loop_start: 0
-poster: /media/navimow-poster.jpg
+poster: /media/navimow-poster-2.jpg
 reels:
   - video: /media/navimow-reel-1.mp4
     poster: /media/navimow-reel-1.jpg
