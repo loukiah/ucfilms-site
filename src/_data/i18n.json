@@ -65,7 +65,9 @@
     "mail_from": "From",
     "mail_reach": "Reach us at",
     "explore": "Explore all work",
-    "work_title": "Selected *work*"
+    "work_title": "Selected *work*",
+    "contact_kicker": "Say hello",
+    "contact_place": "Berlin, working everywhere"
   },
   "de": {
     "work": "Arbeiten",
@@ -133,6 +135,8 @@
     "mail_from": "Von",
     "mail_reach": "Erreichbar unter",
     "explore": "Alle Arbeiten ansehen",
-    "work_title": "Ausgewählte *Arbeiten*"
+    "work_title": "Ausgewählte *Arbeiten*",
+    "contact_kicker": "Schreibt uns",
+    "contact_place": "Berlin, unterwegs überall"
   }
 }

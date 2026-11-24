@@ -1,7 +1,26 @@
 {
-  "home": { "en": "/", "de": "/de/" },
-  "about": { "en": "/about/", "de": "/de/ueber-uns/" },
-  "imprint": { "en": "/imprint/", "de": "/de/impressum/" },
-  "privacy": { "en": "/privacy/", "de": "/de/datenschutz/" },
-  "work": { "en": "/work/", "de": "/de/arbeiten/" }
+  "home": {
+    "en": "/",
+    "de": "/de/"
+  },
+  "about": {
+    "en": "/about/",
+    "de": "/de/ueber-uns/"
+  },
+  "imprint": {
+    "en": "/imprint/",
+    "de": "/de/impressum/"
+  },
+  "privacy": {
+    "en": "/privacy/",
+    "de": "/de/datenschutz/"
+  },
+  "work": {
+    "en": "/work/",
+    "de": "/de/arbeiten/"
+  },
+  "contact": {
+    "en": "/contact/",
+    "de": "/de/kontakt/"
+  }
 }

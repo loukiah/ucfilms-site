@@ -41,7 +41,7 @@
     <nav class="nav" id="site-nav" aria-label="{{ 'Main' if lang == 'en' else 'Hauptnavigation' }}">
       <a href="{{ routes.work[lang] }}"{% if pageKind == 'project' or pageKind == 'work' %} aria-current="true"{% endif %}>{{ L.work }}</a>
       <a href="{{ routes.about[lang] }}"{% if pageKind == 'about' %} aria-current="page"{% endif %}>{{ L.about }}</a>
-      <a href="{{ routes.home[lang] }}#contact">{{ L.contact }}</a>
+      <a href="{{ routes.contact[lang] }}"{% if pageKind == 'contact' %} aria-current="page"{% endif %}>{{ L.contact }}</a>
       <a class="lang" href="{{ deUrl if lang == 'en' else enUrl }}" hreflang="{{ 'de' if lang == 'en' else 'en' }}" lang="{{ 'de' if lang == 'en' else 'en' }}" aria-label="{{ L.other_lang_name }}">{{ L.other_lang }}</a>
     </nav>
   </div>
