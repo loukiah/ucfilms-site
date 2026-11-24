@@ -3,7 +3,7 @@ client: Radisson Collection
 title: Meet me at our spot
 slug: radisson-meet-me-at-our-spot
 order: 8
-home: true
+home: false
 published: true
 category_en: Film and photo series
 category_de: Film- und Fotoserie
