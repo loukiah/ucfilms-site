@@ -3,7 +3,7 @@ client: Navimow
 title: "#PrecisionACED at the Bad Homburg Open"
 title_de: "#PrecisionACED bei den Bad Homburg Open"
 slug: navimow
-order: 2
+order: 9.5
 home: true
 published: true
 category_en: Event films and social content
