@@ -5,7 +5,7 @@ title_de: "Jeder Boden hat seine Geschichte"
 slug: roborock
 order: 1
 home: true
-published: false
+published: true
 category_en: Social campaign
 category_de: Social-Kampagne
 location: Prague, Czech Republic
