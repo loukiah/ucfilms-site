@@ -65,7 +65,7 @@
     "mail_from": "From",
     "mail_reach": "Reach us at",
     "explore": "Explore all work",
-    "work_title": "All *work*"
+    "work_title": "Selected *work*"
   },
   "de": {
     "work": "Arbeiten",
@@ -133,6 +133,6 @@
     "mail_from": "Von",
     "mail_reach": "Erreichbar unter",
     "explore": "Alle Arbeiten ansehen",
-    "work_title": "Alle *Arbeiten*"
+    "work_title": "Ausgewählte *Arbeiten*"
   }
 }
